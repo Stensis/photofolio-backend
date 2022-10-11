@@ -30,7 +30,7 @@ class AdminsController < ApplicationController
           def update
             admin = find_admin
             if admin
-              admin.update(admin_params)
+              admin.update!(admin_params)
               render json: admin
             else
               render_not_found_response
