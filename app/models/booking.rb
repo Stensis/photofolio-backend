@@ -1,3 +1,3 @@
-# class Booking < ApplicationRecord
-#     belongs_to :user
-# end
+class Booking < ApplicationRecord
+    belongs_to :user
+end
