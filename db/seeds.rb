@@ -40,12 +40,15 @@ Gallery.create(category:"burial",title:"gone too soon",image:"https://media.isto
 Gallery.create(category:"burial",title:"shine with the angels",image:"https://media.istockphoto.com/photos/sympathy-card-funeral-urn-with-praying-hands-and-burning-candles-picture-id1332079363?k=20&m=1332079363&s=612x612&w=0&h=4pWAiv-YTkCBZal-DWd8uEBo5Rh0PfMrKXEN-CmXZew=",date:"12/3/2322",admin_id:2)
 Gallery.create(category:"burial",title:"gone too soon",image:"https://media.istockphoto.com/photos/funerary-urn-with-ashes-of-dead-and-flowers-at-funeral-picture-id1320130596?k=20&m=1320130596&s=612x612&w=0&h=wd5QKanW6dOM8Kc1oGg-LxNhmmg3vx7qKKxjtlJxs10=",date:"12/5/2092",admin_id:1)
 # #portraits
-# Gallery.create(category:"potraits",title:"black woman",image:"https://media.istockphoto.com/photos/excited-woman-wearing-rainbow-cardigan-picture-id1327495437?k=20&m=1327495437&s=612x612&w=0&h=uYgb28tIs15a-rrnli1gqAiG9mBhazPrui9FRpqu9UM=",date:"12/3/2092",admin_id:3)
-# Gallery.create(category:"potraits",title:"model potrait",image:"https://media.istockphoto.com/photos/neon-blue-purple-lights-posing-in-studio-asian-chinese-female-fashion-picture-id1337566785?k=20&m=1337566785&s=612x612&w=0&h=NtAOhjihioCwCHEs4ivFvrumc8MGb9g8KCFx-w9AnXQ=",date:"12/3/2023",admin_id:2)
-# Gallery.create(category:"photographer portrait",title:"mother nature",image:"https://media.istockphoto.com/photos/professional-photographer-at-the-studio-african-american-man-wear-picture-id1335978911?k=20&m=1335978911&s=612x612&w=0&h=5AJpsG4d9YblEocZ2s9xQ9T3SCV-j11BrIZH_B6mDNM=",date:"12/3/2034",admin_id:1)
+Gallery.create(category:"potraits",title:"black woman",image:"https://media.istockphoto.com/photos/excited-woman-wearing-rainbow-cardigan-picture-id1327495437?k=20&m=1327495437&s=612x612&w=0&h=uYgb28tIs15a-rrnli1gqAiG9mBhazPrui9FRpqu9UM=",date:"12/3/2092",admin_id:3)
+Gallery.create(category:"potraits",title:"model potrait",image:"https://media.istockphoto.com/photos/neon-blue-purple-lights-posing-in-studio-asian-chinese-female-fashion-picture-id1337566785?k=20&m=1337566785&s=612x612&w=0&h=NtAOhjihioCwCHEs4ivFvrumc8MGb9g8KCFx-w9AnXQ=",date:"12/3/2023",admin_id:2)
+Gallery.create(category:"photographer portrait",title:"mother nature",image:"https://media.istockphoto.com/photos/professional-photographer-at-the-studio-african-american-man-wear-picture-id1335978911?k=20&m=1335978911&s=612x612&w=0&h=5AJpsG4d9YblEocZ2s9xQ9T3SCV-j11BrIZH_B6mDNM=",date:"12/3/2034",admin_id:1)
+
 # #random pictures
-# Gallery.create(category:"cloudy skies",title:"beautiful nature",image:"https://media.istockphoto.com/photos/clouds-aerial-view-picture-id878607638?k=20&m=878607638&s=612x612&w=0&h=WuQLi7EtzrUMVoAsFOL6y3XoALL-nwBGCBDcbTqux9Q=",date:"12/3/2022",admin_id:3)
-# Gallery.create(category:"indoor gaming",title:"yolo",image:"https://media.istockphoto.com/photos/africanamerican-people-playing-board-games-at-home-picture-id1421092128?k=20&m=1421092128&s=612x612&w=0&h=1SGLgj-UOG7BtySsk2VvEb98wR_K6C5OLW-dLsc0XrU=",date:"12/3/2042",admin_id:2)
+
+Gallery.create(category:"cloudy skies",title:"beautiful nature",image:"https://media.istockphoto.com/photos/clouds-aerial-view-picture-id878607638?k=20&m=878607638&s=612x612&w=0&h=WuQLi7EtzrUMVoAsFOL6y3XoALL-nwBGCBDcbTqux9Q=",date:"12/3/2022",admin_id:3)
+Gallery.create(category:"indoor gaming",title:"yolo",image:"https://media.istockphoto.com/photos/africanamerican-people-playing-board-games-at-home-picture-id1421092128?k=20&m=1421092128&s=612x612&w=0&h=1SGLgj-UOG7BtySsk2VvEb98wR_K6C5OLW-dLsc0XrU=",date:"12/3/2042",admin_id:2)
+
 # #travelling
 # Gallery.create(category:"mountain climbing",title:"adventure",image:"https://media.istockphoto.com/photos/weve-made-it-all-this-way-i-am-proud-picture-id904172104?k=20&m=904172104&s=612x612&w=0&h=UWlcgOm5TaVPKo2impWxaibMS6ECQVUOpetNZz3ReMQ=",date:"12/3/2122",admin_id:1)
 # Gallery.create(category:"boot riding",title:"water lover",image:"https://media.istockphoto.com/photos/lady-with-kayak-picture-id516449022?k=20&m=516449022&s=612x612&w=0&h=6TCzYP9ohT2j3g602N4exOdUbbuzYqDfhqsTgErLM_M=",date:"12/3/2172",admin_id:3)
