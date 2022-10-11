@@ -1,3 +1,3 @@
-# class GalleryReviewSerializer < ActiveModel::Serializer
-#   attributes :id, :category, :image, :tittle, :date
-# end
+class GalleryReviewSerializer < ActiveModel::Serializer
+  attributes :id, :category, :image, :tittle, :date
+end
