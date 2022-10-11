@@ -49,5 +49,4 @@ class UsersController < ApplicationController
       render json: { error: "Usee not found" }, status: :not_found
     end
   
-  end
 end
