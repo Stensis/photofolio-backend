@@ -28,12 +28,12 @@ Booking.create(username:"Rose",email:"rose@gmail.com", user_id:4,session_type:"g
 Booking.create(username:"Murife",email:"murife@gmail.com", user_id:5,session_type:"ruracio",booking_date:"16/7/2023")
 
 # ## Gallery data
-# # weddings
-# Gallery.create(category:"wedding",title:"happily ever after",image:"https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",date:"4/34/2016",admin_id:2)
-# Gallery.create(category:"wedding",title:"love wins",image:"https://media.istockphoto.com/photos/bride-and-groom-getting-married-in-beach-ceremony-picture-id179227637?k=20&m=179227637&s=612x612&w=0&h=I00vLY7aGeBZ4rb0KAtr1ehoDNtLl526CVPUSSu8RsE=",date:"23/03/2019",admin_id:1)
-# Gallery.create(category:"wedding",title:"maldavies",image:"https://media.istockphoto.com/photos/bride-and-groom-with-coconuts-on-the-beach-picture-id531015447?k=20&m=531015447&s=612x612&w=0&h=ZZJlTxI-FYu-_F_sB3LegFTj4zVgP6n-TY8Dh0Uk6ZE=",date:"12/07/2014",admin_id:3)
-# Gallery.create(category:"wedding",title:"perfect match",image:"https://media.istockphoto.com/photos/engagement-ring-on-the-beach-picture-id537663943?k=20&m=537663943&s=612x612&w=0&h=i7VSi9WqGOmO-8xMHGTYO2i1HMbS66_QM0Wm8zuwbj4=",date:"23/12/2018",admin_id:2)
-# Gallery.create(category:"wedding",title:"mr & mrs karimi",image:"https://media.istockphoto.com/photos/groom-carrying-bride-at-beautiful-beach-wedding-picture-id177846092?k=20&m=177846092&s=612x612&w=0&h=GfXt0jygCKX764rAMloxiz2ANBUcx2ROnF7Hrv4Jh1I=",date:"18",admin_id:1)
+# weddings
+Gallery.create(category:"wedding",title:"happily ever after",image:"https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",date:"4/34/2016",admin_id:2)
+Gallery.create(category:"wedding",title:"love wins",image:"https://media.istockphoto.com/photos/bride-and-groom-getting-married-in-beach-ceremony-picture-id179227637?k=20&m=179227637&s=612x612&w=0&h=I00vLY7aGeBZ4rb0KAtr1ehoDNtLl526CVPUSSu8RsE=",date:"23/03/2019",admin_id:1)
+Gallery.create(category:"wedding",title:"maldavies",image:"https://media.istockphoto.com/photos/bride-and-groom-with-coconuts-on-the-beach-picture-id531015447?k=20&m=531015447&s=612x612&w=0&h=ZZJlTxI-FYu-_F_sB3LegFTj4zVgP6n-TY8Dh0Uk6ZE=",date:"12/07/2014",admin_id:3)
+Gallery.create(category:"wedding",title:"perfect match",image:"https://media.istockphoto.com/photos/engagement-ring-on-the-beach-picture-id537663943?k=20&m=537663943&s=612x612&w=0&h=i7VSi9WqGOmO-8xMHGTYO2i1HMbS66_QM0Wm8zuwbj4=",date:"23/12/2018",admin_id:2)
+Gallery.create(category:"wedding",title:"mr & mrs karimi",image:"https://media.istockphoto.com/photos/groom-carrying-bride-at-beautiful-beach-wedding-picture-id177846092?k=20&m=177846092&s=612x612&w=0&h=GfXt0jygCKX764rAMloxiz2ANBUcx2ROnF7Hrv4Jh1I=",date:"18",admin_id:1)
 
 # # burial
 # Gallery.create(category:"burial",title:"gone too soon",image:"https://media.istockphoto.com/photos/cemetery-casket-waiting-for-memorial-funeral-service-picture-id1395456705?k=20&m=1395456705&s=612x612&w=0&h=i4JbNQipKXo6187gGxaRX-euhIxQNKJxuIGVOj1X0pU=",date:"12/3/2092",admin_id:3)
