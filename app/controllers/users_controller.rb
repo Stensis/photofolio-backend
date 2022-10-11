@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   
     # POST /user
     def create
-      user = User.create!(1user_params)
+      user = User.create!(user_params)
       render json: user, status: :created
     end
   
