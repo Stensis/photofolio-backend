@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyString
+  email: MyString
+  session_type: MyString
+  booking_date: MyString
+
+two:
+  text: MyString
+  email: MyString
+  session_type: MyString
+  booking_date: MyString
