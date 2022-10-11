@@ -21,11 +21,11 @@ Admin.create(username:"Salome",password_digest:"salome",email:"salome@gmail",use
 
 
 # #Booking 
-# Booking.create(username:"Anita",email:"anita@gmail.com",user_id:3,session_type:"birthday",booking_date:"12/9/2026")
-# Booking.create(username:"Amos",email:"amos@gmail.com", user_id:2,session_type:"burial",booking_date:"14/3/2023")
-# Booking.create(username:"Jane",email:"jane@gmail.com", user_id:1,session_type:"wedding",booking_date:"2/12/2055")
-# Booking.create(username:"Rose",email:"rose@gmail.com", user_id:4,session_type:"graduation",booking_date:"14/9/2030")
-# Booking.create(username:"Murife",email:"murife@gmail.com", user_id:5,session_type:"ruracio",booking_date:"16/7/2023")
+Booking.create(username:"Anita",email:"anita@gmail.com",user_id:3,session_type:"birthday",booking_date:"12/9/2026")
+Booking.create(username:"Amos",email:"amos@gmail.com", user_id:2,session_type:"burial",booking_date:"14/3/2023")
+Booking.create(username:"Jane",email:"jane@gmail.com", user_id:1,session_type:"wedding",booking_date:"2/12/2055")
+Booking.create(username:"Rose",email:"rose@gmail.com", user_id:4,session_type:"graduation",booking_date:"14/9/2030")
+Booking.create(username:"Murife",email:"murife@gmail.com", user_id:5,session_type:"ruracio",booking_date:"16/7/2023")
 
 # ## Gallery data
 # # weddings
