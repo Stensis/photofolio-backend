@@ -1,4 +1,19 @@
-require_relative "boot"
+# config/application.rb
+module MyApp
+  class Application < Rails::Application
+    config.load_defaults 6.1
+    # This is set in apps generated with the --api flag, and removes session/cookie middleware
+    config.api_only = true
+
+    require "active_storage/engine"
+    # Must add these lines!
+    # Adding back cookies and session middleware
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+
+    # Use SameSite=Strict for all cookies to help protect against CSRF
+    config.action_dispatch.cookies_same_site_protection = :strict
+    require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -12,16 +27,25 @@ require "action_controller/railtie"
 # require "action_text/engine"
 require "action_view/railtie"
 # require "action_cable/engine"
-require "rails/test_unit/railtie"
+# require "sprockets/railtie"
+# require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Photofolio
+module Phase4RailsPuttingItAllTogetherAuth
   class Application < Rails::Application
+    # Adding cookies and session middleware
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+
+    # Use SameSite=Strict for all cookies to help protect against CSRF
+    # https://owasp.org/www-community/SameSite
+    config.action_dispatch.cookies_same_site_protection = :strict
+
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -35,13 +59,7 @@ module Photofolio
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-
-    # handle cors for origin
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-         origins '*'
-         resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :options]
-       end
-    end
+  end
+end
   end
 end

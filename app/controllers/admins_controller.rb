@@ -1,22 +1,35 @@
 class AdminsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
+  #   #sessions for admins controllers
+  # def create
+  #   admin = Admin.create(admin_params)
+  #   if admin.valid?
+  #     session[:admin_id] = admin[:id]
+  #     render json: admin, status: :created
+  #   else 
+  #     render json: { errors: ["Not authorized"] }, status: :unprocessable_entity
+  #   end
+  # end
+
+  # def show
+  #   admin = Admin.find_by(id: session[:admin_id])
+  #   if admin 
+  #     render json: admin, status: :ok
+  #   else
+  #     render json: { error: "Not authorized" }, status: :unauthorized 
+  #   end
+  # end
         # GET /admin
           def index
             admins = Admin.all
             render json: admins
           end
         
-          # POST /admin
-          # def create
-          #   admin = Admin.create!(admin_params)
-          #   render json: admin, status: :created
-          # end
-
+         
           # POST get specific admin by checking if email exists
           def create
             admin = Admin.find_by_email(params[:email])
-            #admin = JSON.parse(request.raw_post)
             render json: admin
           end
          
