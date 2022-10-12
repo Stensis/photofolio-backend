@@ -38,7 +38,7 @@ class UsersController < ApplicationController
     private 
   
     def user_params
-      params.permit(:id, :username, :email_address, :password, :confirm_password)
+      params.permit(:id, :username, :email_address, :password_digest)
     end
   
     def find_user
@@ -46,7 +46,7 @@ class UsersController < ApplicationController
     end
   
     def render_not_found_response
-      render json: { error: "User not found" }, status: :not_found
+      render json: { error: "Usee not found" }, status: :not_found
     end
   
 end

@@ -15,9 +15,9 @@ User.create(username:"allan",password_digest:"allan",email:"allan@gmail")
 
 # # ##ADMIN DATA
 
-# Admin.create(username:"Stephen",password_digest:"stephen",email:"stephen@gmail",user_id:1)
-# Admin.create(username:"Njuguna",password_digest:"Njuguna",email:"njuguna@gmail",user_id:2)
-# Admin.create(username:"Salome",password_digest:"salome",email:"salome@gmail",user_id:3)
+Admin.create(username:"Stephen",password_digest:"stephen",email:"stephen@gmail",user_id:1)
+Admin.create(username:"Njuguna",password_digest:"Njuguna",email:"njuguna@gmail",user_id:2)
+Admin.create(username:"Salome",password_digest:"salome",email:"salome@gmail",user_id:3)
 
 
 # #Booking 

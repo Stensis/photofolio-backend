@@ -33,8 +33,8 @@ class BookingsController < ApplicationController
         def destroy
           booking = find_booking
           if booking
-            Booking.destroy
-            head :no_content
+            booking.destroy
+            render json: { status: :ok, message:"deleted booking successfully"}
           else 
             render_not_found_response
           end
