@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   post '/user_signup', to: 'users#create'
 
 
-  # get "/admin_me", to: "admins#show"
+  # get "/admin_me", to: "sessions#show"
   # post "/admin_login", to: "sessions#create"
   # delete "/admin_logout", to: "sessions#destroy"
   # post '/admin_signup', to: 'admins#create'
@@ -25,4 +25,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root to: "application#cookie"
 end
