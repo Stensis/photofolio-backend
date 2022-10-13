@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   #   user
     def create 
       user = User.find_by(email: params[:email])
-      if user&.authenticate(params[:password])
+      if user.password_digest === params[:password]
         session[:user_id] = user[:id]
         render json: user, status: :created
       else
