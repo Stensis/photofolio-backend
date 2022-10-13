@@ -9,13 +9,13 @@ Rails.application.routes.draw do
   
 
 # sessions is setups for the sessionsController
-  get "/me", to: "users#show"
+  get "/user_me", to: "users#show"
   post "/user_login", to: "sessions#create"
   delete "/user_logout", to: "sessions#destroy"
   post '/user_signup', to: 'users#create'
 
 
-  get "/me", to: "admins#show"
+  get "/admin_me", to: "admins#show"
   post "/admin_login", to: "sessions#create"
   delete "/admin_logout", to: "sessions#destroy"
   post '/admin_signup', to: 'admins#create'
