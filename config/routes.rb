@@ -16,9 +16,9 @@ Rails.application.routes.draw do
 
 
   get "/me", to: "admins#show"
-  post "/login", to: "sessions#create"
-  delete "/logout", to: "sessions#destroy"
-  post '/signup', to: 'admins#create'
+  post "/admin_login", to: "sessions#create"
+  delete "/admin_logout", to: "sessions#destroy"
+  post '/admin_signup', to: 'admins#create'
   
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
