@@ -1,25 +1,6 @@
 class UsersController < ApplicationController
     wrap_parameters format:[]
 
-# #sessions for users
-#   def create
-#     user = User.create(user_params)
-#     if user.valid?
-#       session[:user_id] = user[:id]
-#       render json: user, status: :created
-#     else 
-#       render json: { errors: ["Not authorized"] }, status: :unprocessable_entity
-#     end
-#   end
-
-#   def show
-#     user = User.find_by(id: session[:user_id])
-#     if user 
-#       render json: user, status: :ok
-#     else
-#       render json: { error: "Not authorized" }, status: :unauthorized 
-#     end
-#   end
 
     # GET /user
     def index
@@ -58,7 +39,7 @@ class UsersController < ApplicationController
     private 
   
     def user_params
-      params.permit(:id, :username, :email, :password_digest)
+      params.permit(:id, :username, :email, :password)
     end
   
     def find_user

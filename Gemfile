@@ -7,6 +7,7 @@ ruby "2.7.4"
 gem "rails", "~> 7.0.4"
 
 gem "active_model_serializers"
+
 gem 'bcrypt'
 
 # Use sqlite3 as the database for Active Record
