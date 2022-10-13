@@ -8,11 +8,11 @@ Rails.application.routes.draw do
   resources :users
   
 
-#sessions is setups for the sessionsController
-  # get "/me", to: "users#show"
-  # post "/login", to: "sessions#create"
-  # delete "/logout", to: "sessions#destroy"
-  # post '/signup', to: 'users#create'
+# sessions is setups for the sessionsController
+  get "/me", to: "users#show"
+  post "/user_login", to: "sessions#create"
+  delete "/user_logout", to: "sessions#destroy"
+  post '/user_signup', to: 'users#create'
 
 
   get "/me", to: "admins#show"
