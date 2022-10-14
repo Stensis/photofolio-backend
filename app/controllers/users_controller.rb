@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     wrap_parameters format:[]
-
+    skip_before_action :verify_authenticity_token
 
     # GET /user
     def index
