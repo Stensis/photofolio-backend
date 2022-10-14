@@ -5,7 +5,6 @@ class AdminsSessionsController < ApplicationController
 
   #   user
     def create 
-      admin = Admin.find_by_email(params[:password])
       admin = Admin.find_by(email: params[:email], password_digest: params[:password])
       if admin
         session[:admin_id] = admin[:id]
