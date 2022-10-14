@@ -1,5 +1,6 @@
 class AdminsSessionsController < ApplicationController
     before_action :authorize
+    protect_from_forgery with: :null_session, only: [:create]
     skip_before_action :verify_authenticity_token
     skip_before_action :authorize, only: [:create]
 
