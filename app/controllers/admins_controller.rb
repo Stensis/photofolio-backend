@@ -11,7 +11,7 @@ class AdminsController < ApplicationController
          
           # POST get specific admin by checking if email exists
           def create
-            admin = Admin.create!(user_params)
+            admin = Admin.create!(admin_params)
             render json: admin, status: :created
           end
          
