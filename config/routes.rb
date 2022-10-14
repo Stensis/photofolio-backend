@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :admins 
   resources :sessions
   resources :users
+  resources :adminSessions
   
 
 # sessions is setups for the sessionsController
@@ -14,11 +15,11 @@ Rails.application.routes.draw do
   delete "/user_logout", to: "sessions#destroy"
   post '/user_signup', to: 'users#create'
 
-
-  # get "/admin_me", to: "sessions#show"
-  # post "/admin_login", to: "sessions#create"
-  # delete "/admin_logout", to: "sessions#destroy"
-  # post '/admin_signup', to: 'admins#create'
+#ADMINS SESSION DATA
+  get "/admin_me", to: "adminSessions#show"
+  post "/admin_login", to: "adminSessions#create"
+  delete "/admin_logout", to: "adminSessions#destroy"
+  post '/admin_signup', to: 'admins#create'
   
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
