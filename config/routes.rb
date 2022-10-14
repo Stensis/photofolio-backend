@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :admins 
   resources :sessions
   resources :users
-  resources :admins_sessions
+  resources :admin_sessions
   
 
 # sessions is setups for the sessionsController
@@ -16,9 +16,9 @@ Rails.application.routes.draw do
   post '/user_signup', to: 'users#create'
 
 #ADMINS SESSION DATA
-  get "/admin_me", to: "admins_sessions#show"
-  post "/admin_login", to: "admins_sessions#create"
-  delete "/admin_logout", to: "admins_sessions#destroy"
+  get "/admin_me", to: "admin_sessions#show"
+  post "/admin_login", to: "admin_sessions#create"
+  delete "/admin_logout", to: "admin_sessions#destroy"
   post '/admin_signup', to: 'admins#create'
   
 
