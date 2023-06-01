@@ -3,7 +3,7 @@ class AdminsController < ApplicationController
     skip_before_action :verify_authenticity_token
 
         # GET /admin
-          def index
+          def indexx
             admins = Admin.all
             render json: admins
           end
